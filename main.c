@@ -23,6 +23,38 @@ float raizQuadrada(float numero){ //observe que a função trunca os valores par
 }
 
 
+//constante de PI -> Testar
+
+float pi(){
+    float pi = 3.1415926;
+
+    return pi;
+}
+
+
+//constante de euler -> Testar
+float euler(){
+    float n_euler = 0.5772156;
+    
+    return n_euler;
+        
+}
+
+
+float tau(){
+    float n_tau = 6.283185;
+
+    return n_tau;
+}
+
+
+int trunc(float numero){
+
+    int valor_final = numero;
+
+    return numero;
+}
+
 //funcao afim: f(x) = ax + b
 float funcaoAfim(){
 
@@ -102,6 +134,19 @@ Raizes equacaoSegundoGrau(float coef_quadratico, float coef_linear, float term_i
     }
 }
 
+//fatorial -> testar
+int factorial(int numero){
+
+    int contador = numero;
+
+    while(contador > 0){
+        numero *= numero - 1;
+        contador --;
+    }
+
+    return numero;
+}
+
 
 //PRECISA DE CORREÇÕES 
 float exponencial(float numero, float intervalo){
@@ -136,6 +181,10 @@ float pitorad(float rad){
     return resultado;
 }
 
+
+
+
+
 //converte Graus para Pi radianos 
 int radtopi(float graus){
     int resultado;
@@ -146,11 +195,12 @@ int radtopi(float graus){
 }
 
 
-    int main(){
-
+int main(){
     Raizes resultado = equacaoSegundoGrau(2, -8, 4);
 
     printf("%f\n", resultado.raiz1);
-    printf("%f", resultado.raiz2);   
+    printf("%f", resultado.raiz2);
+    
+    
     return 0;
 }
