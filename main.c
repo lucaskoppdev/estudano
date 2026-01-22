@@ -3,6 +3,10 @@
 //Copiando a biblioteca math usando apenas a stdlib
 
 
+
+
+
+
 //metodo babilonico pra descobrir a raiz quadrada
 float raizQuadrada(float numero){ //observe que a função trunca os valores para inteiros (pura conveniencia)
 
@@ -25,11 +29,13 @@ float raizQuadrada(float numero){ //observe que a função trunca os valores par
 
 //constante de PI -> Testar
 
+
 float pi(){
     float pi = 3.1415926;
 
     return pi;
 }
+
 
 
 //constante de euler -> Testar
@@ -54,6 +60,8 @@ int trunc(float numero){
 
     return numero;
 }
+
+
 
 //funcao afim: f(x) = ax + b
 float funcaoAfim(){
@@ -134,6 +142,8 @@ Raizes equacaoSegundoGrau(float coef_quadratico, float coef_linear, float term_i
     }
 }
 
+
+
 //fatorial -> testar
 int factorial(int numero){
 
@@ -162,6 +172,7 @@ float exponencial(float numero, float intervalo){
 }
 
 
+
 //potenciação
 float potenciacao(float base, float expoente){
     float resultado = 1;
@@ -180,8 +191,6 @@ float pitorad(float rad){
 
     return resultado;
 }
-
-
 
 
 
